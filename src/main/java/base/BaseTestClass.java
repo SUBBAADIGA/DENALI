@@ -11,6 +11,7 @@ public class BaseTestClass {
     Browser browser;
     BrowserContext context;
     protected Page page;
+    
 
     public void launchPlaywright(String browserName, String headless) {
         playwright = Playwright.create();
