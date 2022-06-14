@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-14T09:51:23 IST" name="Default suite" finished-at="2022-06-14T09:51:56 IST" duration-ms="33540">
+    <groups>
+    </groups>
+    <test started-at="2022-06-14T09:51:23 IST" name="Default test" finished-at="2022-06-14T09:51:56 IST" duration-ms="33540">
+      <class name="tests.RegisterCartTest">
+        <test-method is-config="true" signature="browserStart(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegisterCartTest@2accdbb5]" started-at="2022-06-14T09:51:23 IST" name="browserStart" finished-at="2022-06-14T09:51:37 IST" duration-ms="14457" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://naveenautomationlabs.com/opencart/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserStart -->
+        <test-method signature="CreateAccountTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:tests.RegisterCartTest@2accdbb5]" started-at="2022-06-14T09:51:37 IST" name="CreateAccountTest" finished-at="2022-06-14T09:51:40 IST" duration-ms="2449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SAADIGA23]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Auto]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sadiga2w3@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[987873678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateAccountTest -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:tests.RegisterCartTest@2accdbb5]" started-at="2022-06-14T09:51:40 IST" name="browserClose" finished-at="2022-06-14T09:51:40 IST" duration-ms="571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+        <test-method is-config="true" signature="browserStart(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.RegisterCartTest@2accdbb5]" started-at="2022-06-14T09:51:40 IST" name="browserStart" finished-at="2022-06-14T09:51:47 IST" duration-ms="7194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://naveenautomationlabs.com/opencart/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserStart -->
+        <test-method signature="AddProductToCart(java.lang.String,java.lang.String)[pri:2, instance:tests.RegisterCartTest@2accdbb5]" started-at="2022-06-14T09:51:47 IST" name="AddProductToCart" finished-at="2022-06-14T09:51:56 IST" duration-ms="8329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sadiga2w3@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProductToCart -->
+        <test-method is-config="true" signature="browserClose()[pri:0, instance:tests.RegisterCartTest@2accdbb5]" started-at="2022-06-14T09:51:56 IST" name="browserClose" finished-at="2022-06-14T09:51:56 IST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserClose -->
+      </class> <!-- tests.RegisterCartTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
