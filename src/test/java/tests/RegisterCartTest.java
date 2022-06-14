@@ -22,13 +22,10 @@ import pages.ProductPage;
 import pages.RegisterPage;
 
 public class RegisterCartTest extends BaseTestClass {
-    CartLoginPage loginPage;
-    RegisterPage registerpage;
-    ProductPage  productPage;
-    CheckotPage  checkotPage;
+
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy_MM_dd_HH_mm_ss");
     LocalDateTime now = LocalDateTime.now();
-   public String name=dtf.format(now);
+    public String name=dtf.format(now);
 
     @BeforeMethod
     @Parameters({ "url", "browserName" , "headless"})
@@ -41,9 +38,8 @@ public class RegisterCartTest extends BaseTestClass {
     @Test(priority = 1)
     @Parameters({ "Fname", "LName","Email","Telephone","PWD" })
     public void CreateAccountTest(@Optional("SAADIGA23") String Fname, @Optional("Auto") String LName,@Optional("sadiga2w3@gmail.com") String Email,@Optional("987873678") String Telephone,@Optional("Test@123") String PWD) {
-        loginPage = new CartLoginPage(page);
-        registerpage=new RegisterPage(page);
-        loginPage.ClickRegisterLabel();
+       
+    	loginPage.ClickRegisterLabel();
         registerpage.RegisterAccount(Fname+name,LName,name+Email,Telephone,PWD);
         Assert.assertTrue(registerpage.VerifyAccountCreation());
         loginPage.Logout();
@@ -53,11 +49,7 @@ public class RegisterCartTest extends BaseTestClass {
     @Test(priority = 2)
     @Parameters({ "Email", "PWD"})
     public void AddProductToCart(@Optional("sadiga2w3@gmail.com") String Email,@Optional("Test@123") String PWD) throws InterruptedException {
-        loginPage = new CartLoginPage(page);
-        registerpage=new RegisterPage(page);
-        checkotPage=new CheckotPage(page);
-        productPage=new ProductPage(page);
-        
+
         loginPage.LogintoApp(name+Email, PWD);
         productPage.AddtoCart(1);
         productPage.AddtoCart(2);

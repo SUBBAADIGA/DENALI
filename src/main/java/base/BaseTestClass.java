@@ -3,6 +3,11 @@ package base;
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.WaitUntilState;
 
+import pages.CartLoginPage;
+import pages.CheckotPage;
+import pages.ProductPage;
+import pages.RegisterPage;
+
 
 public class BaseTestClass {
 
@@ -11,6 +16,11 @@ public class BaseTestClass {
     Browser browser;
     BrowserContext context;
     protected Page page;
+    
+    public CartLoginPage loginPage;
+    public RegisterPage registerpage;
+    public ProductPage  productPage;
+    public CheckotPage  checkotPage;
     
 
     public void launchPlaywright(String browserName, String headless) {
@@ -30,6 +40,10 @@ public class BaseTestClass {
         context.close();
         page = browser.newPage();
         System.out.println("**** Project Browser Name and Version is : " + browserName + " : " + browser.version());
+        loginPage = new CartLoginPage(page);
+        registerpage=new RegisterPage(page);
+        checkotPage=new CheckotPage(page);
+        productPage=new ProductPage(page);
     }
 
     public void launchApplication(String url) {
